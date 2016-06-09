@@ -1,0 +1,3 @@
+[10-Feb-2016 02:57:46 UTC] PHP Fatal error:  Class 'lib' not found in /home/mreedtechcpanel/public_html/portfolio/index.php on line 1
+[19-Feb-2016 17:42:54 UTC] PHP Fatal error:  Call to undefined method lib::echoPageFooter() in /home/mreedtechcpanel/public_html/portfolio/index.php on line 15
+[19-Feb-2016 17:42:56 UTC] PHP Fatal error:  Call to undefined method lib::echoPageFooter() in /home/mreedtechcpanel/public_html/portfolio/index.php on line 15
