@@ -123,6 +123,11 @@ class lib
 						<p>&#109;&#100;&#114;&#050;&#049;&#051;&#048;&#064;&#114;&#105;&#116;&#046;&#101;&#100;&#117;</p>
 						<!-- </a> -->
 					</div>
+
+					<div>
+						<i class='fa fa-github fa-2x'></i>
+						<p>Find me on Git</p>
+					</div>					
 				</div>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
