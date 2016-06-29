@@ -49,7 +49,8 @@ function init()
 		{ text: "HTML",weight:11},
 		{ text: "CSS",weight:11},
 		{ text: "AngularJS",weight:9},
-		{ text: "MongoDB",weight:9},
+		{ text: "Python",weight: 9},
+		{ text: "MongoDB",weight:8},
 		{ text: "MySQL",weight:9},
 		{ text: "PHP",weight:8},
 		{ text: "JavaScript",weight:11},
@@ -86,5 +87,3 @@ function init()
 	    });
 	}); //end function
 } //end init()
-
-
