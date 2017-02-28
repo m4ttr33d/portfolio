@@ -1,153 +1,150 @@
-<?include_once("resources/lib.php"); $class = new lib; echo $class->echoHeader("Matthew Reed Portfolio")?>
- 	<?$class = new lib; echo $class->echoNavBar()?>
-		<div id="fullpage">
-			<!-- Section 0 -->
-			<div class="section" id="homeSection">
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="col-xs-4"></div>
-						<div class="col-xs-4">
-							<div id="homeBox">
-								<h2 class="text-center"> Matthew Reed </h2>
-								<h3 class="text-center"> Developer <br> Photographer <br> Enthusiast </h3>
-							</div>
-						</div>
-						<div class="col-xs-4"></div>
-					</div> <!-- end row -->
-				</div> <!-- end container fluid  -->
-				<!-- Footer -->
-				<? echo $class->echoPageFooter("footer") ?>
-			</div> <!-- End section0--> 
+<html>
+	<head><meta http-equiv='Content-Type' content='text/html; charset=gb18030'>
+		<title> Matthew Reed Portfolio </title>
+		<!-- Custom Javascript -->
+		<script src='js/main.js'></script>
+		<!-- JQuery Google Library -->
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<!-- Bootstrap CSS -->
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' 
+		integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+		<!-- Bootstrap JavaScript -->
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' 
+		integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' 
+		crossorigin='anonymous'></script>
+		<!-- Fontawesome CDN -->
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+		<!-- Custom CSS -->
+		<link rel='stylesheet' type='text/css' href='css/main.css'>
+		<!-- Favicon Stuff -->
+		<link rel='shortcut icon' href='img/1467686685.ico' type='image/x-icon'>
+		<link rel='icon' href='img/1467686685.ico' type='image/x-icon'>
+		<script src='//code.jquery.com/jquery-2.1.1.min.js'></script>
+		<!-- Roboto Font -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:thin" rel="stylesheet">
+		<!-- Oh, is that a footer? -->
+		<link rel='stylesheet' href='css/footer-distributed-with-contact-form.css'>
+		<!-- Scroller JavaScript -->
+		<script src='js/scrolling-nav.js'></script>
+		<!-- Scroller jquery.easing.min.js -->
+		<script src='js/jquery.easing.min.js'></script>
+	</head>
+	<body onload="init()" data-spy="scroll" data-target=".navbar-fixed-top">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed pull-left " data-toggle="collapse" data-target="#navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand page-scroll" href="#home"> Matthew <strong> Reed </strong> </a>
+				</div> <!--/.nav-collapse -->
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav nav-vertical-center">
+						<li class="active"><a href="#home" class="page-scroll">Home</a></li>
+						<li><a href="#skills" class="page-scroll">Skills</a></li>
+						<li><a href="#experience" class="page-scroll">Experience</a></li>
+						<li><a href="#projects" class="page-scroll">Projects</a></li>
+						<li><a href="#footer" class="page-scroll">Contact</a><li>
+					</ul>
+				</div>				
+			</div><!--/.container-fluid -->
+		</nav>
+		<div class="cd-fixed-bg cd-bg-1 col-xs-12 text-center vertical-center" id="home">
+			<div class="col-xs-4"></div>
+			<div class="col-xs-4">
+				<script src="js/typed.js"></script>
+				<h1> Matthew Reed </h1>
+				<h2> I am <div class="typed"></div></h2>
+			</div>
+			<div class="col-xs-4"></div>
+		</div>
+		<!-- About Section -->
+		<div class="cd-scrolling-bg cd-bg-2 col-xs-12 text-center vertical-center" id="skills">
+			<div class="col-xs-6">
+				<div class="centerBlock">
+					<img class="img-responsive img-rounded m-x-auto d-block" src="" id="self">
+				</div>
+			</div>
+			<div class="col-xs-6 vertical-center">
+				<p>
+					This is some text.
+				</p>
+			</div>
+		</div>
+		<!-- Another background -->
+		<div class="cd-fixed-bg cd-bg-2 col-xs-12 text-center vertical-center">
+			<div class="cd-container">
+			</div>
+		</div>
+		<div class="cd-scrolling-bg cd-bg-2 col-xs-12 text-center" id="experience">
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<h2> Assistant SharePoint Administrator </h2>
+				<h5> at </h5>
+				<h4> The Huntzinger Management Group </h4>
+				<h5> January 2017 </h5>
+				<p>
 
-			<!-- Section 1 -->
-			<div class="section" id="whoSection">
-				<!-- Header -->
-				<? echo $class->echoPageFooter("header") ?>
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="col-xs-2">
-						</div>
-						<div class="col-xs-5" id="picture">
-							<!-- <img src="img/DSC_0212.jpg" class="img-responsive" alt="One of my photos"> -->
-							<img src="img/c7.jpg" class="img-responsive" alt="One of my photos">
-						</div>
-						<div class="col-xs-5">
-							<p class="text-left"> My name is Matthew Reed and I am currently a 4th year Information Technology Student
-								at Rochester Institute of Technology in Rochester, New York.
-								My academics at R.I.T are as follows: </p>
-								<ul>
-									<li> Major: Information Technology </li>
-									<li> Minor: Digital Business </li>
-									<li> Concentration: Database and Database Application Development </li>
-									<li> Projected Graduation: May 2017 </li>
-								</ul>
-								<p class="text-left">While studying and homework take up most of my time, I manage to find 
-								free time to do some of the things I love: driving, cars, computer building, food tasting, photography (automotive and landscape), skiing,
-								and playing golf. 
-								If you would like to contact me, please send me an email using the email in the bottom left corner. Thank you. </p>
-						</div>
-					</div> <!-- end row -->
-				</div> <!-- end container fluid  -->	
-				<!-- Footer -->
-				<? echo $class->echoPageFooter("footer") ?>
-			</div> <!-- End section1-->  
-						
-			<!-- Section 2-->
-			<div class="section" id="languagesSection">
-				<!-- Header -->
-				<? echo $class->echoPageFooter("header") ?>
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="col-xs-12">
-							<div id="languageCloud" class="languageCloud"></div>
-						</div>
-					</div> <!-- end row -->
-				</div> <!-- end container fluid  -->
-				<!-- Footer -->
-				<? echo $class->echoPageFooter("footer") ?>
-			</div> <!-- End section2--> 
-
-			<!-- Section 3 
-			<div class="section" id="projectsSection"> <!-- one column for each job, so 3 at the moment-->
-				<!-- Header 
-				<? //echo $class->echoPageFooter("header") ?>
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="col-xs-3">
-						</div>
-						<div class="col-xs-3"id="jobfield">
-							<!-- <img class="img-thumbnail" id="joblogo" src="img/EDM.png" alt="Rochester Institute of Technology">
-							<h2 class="text-center">Culinary Artistry</h2>
-							<h4 class="text-center"> <a target="_blank" href="http://matthewreed.tech/mgis360/CulinaryArtistry/"> Culinary Artistry </a> </h4>
-						</div>			
-						<div class="col-xs-3" id="jobfield">
-							<!-- <img class="img-thumbnail" id="joblogo" src="img/EDM.png" alt="EDM Americas">
-							<h2 class="text-center">Roux Academic</h2>
-							<h4 class="text-center"> <a target="_blank" href="http://matthewreed.tech/mgis360/RouxAcademic/"> Roux Academic </a> </h4>
-						</div>			
-						<div class="col-xs-3" id="jobfield">
-							<!-- <img class="img-thumbnail" id="joblogo" src="img/EDM.png" alt="The Home Depot">
-							<h2 class="text-center">Final Project</h2>
-							<h4 class="text-center"> <a class="text-center" href="http://patientmed.matthewreed.tech"> Final Project </a> </h4>
-						</div>
-					</div> <!-- end row 
-				</div> <!-- end container fluid  	
-				<? //echo $class->echoPageFooter("footer") ?>
-			</div> <!-- End section3--> 
-
-			<!-- Section 4 -->
-			<div class="section" id="jobsSection"> <!-- one column for each job, so 3 at the moment-->
-				<!-- Header -->
-				<? echo $class->echoPageFooter("header") ?>
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="col-xs-3">
-						</div>
-						<div class="col-xs-3"id="jobfield">
-							<!-- <img class="img-thumbnail" id="joblogo" src="img/EDM.png" alt="Rochester Institute of Technology"> -->
-							<h2 class="text-center">CIAS at RIT</h2>
-							<h4 class="text-center"> Employment Date: August 2015 - Present </h4>
-							<h4 class="text-center"> Job Title: Lab Technician </h4>
-							<p> I clean labs, attend to printers, solve technical issues, and make sure all equipment is accounted for at the end of the night in the College of Imaging Arts and Sciences at the Rochester Institute of Technology. </p>
-						</div>			
-						<div class="col-xs-3" id="jobfield">
-							<!-- <img class="img-thumbnail" id="joblogo" src="img/EDM.png" alt="EDM Americas"> -->
-							<h2 class="text-center">EDM Americas</h2>
-							<h4 class="text-center"> Employment Date: May 2014 - Present </h4>
-							<h4 class="text-center"> Job Title: Information Technology Development Intern </h4>
-							<p>I shadow and work in the Information Technology Capture/Development department of the company. My responsibilities include usage of SQL and database queries, web development, application and software programming, and user interface front end. I work primarily with HTML, ColdFusion, C#, and SQL. I work in person when I am on break, and "remote" in when I am at RIT.</p>
-						</div>			
-						<div class="col-xs-3" id="jobfield">
-							<!-- <img class="img-thumbnail" id="joblogo" src="img/EDM.png" alt="The Home Depot"> -->
-							<h2 class="text-center">The Home Depot</h2>
-							<h4 class="text-center"> Employment Date: May 2013 - August 2013 </h4>
-							<h4 class="text-center"> Job Title: Cashier </h4>
-							<p>Carried and processed customers transactions and helped customers satisfy their needs while maintaining exceptional customer service.</p>
-						</div>
-					</div> <!-- end row -->
-				</div> <!-- end container fluid  -->	
-				<!-- Footer -->
-				<? echo $class->echoPageFooter("footer") ?>
-			</div> <!-- End section 4--> 
-						
-			<!-- Section 5 -->
-			<div class="section" id="resumeSection">
-				<!-- Header -->
-				<? echo $class->echoPageFooter("header") ?>
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="col-xs-4"></div>
-						<div class="col-xs-4">
-							<!-- Using PDFObject http://pdfobject.com/markup/ -->
-							<object data="resources/Matthew_Reed_Resume.pdf" type="application/pdf" width="125%" height="90%">	 
-							  <p> Hm. It seems you don't have a PDF Plugin for this Browser. However, you can
-							  	also <a href="Matthew_Reed_Resume.pdf">click here to
-							  download the PDF file.</a></p>
-							</object>
-						</div>
-						<div class="col-xs-4"></div>
-					</div> <!-- end row -->
-				</div> <!-- end container fluid  -->
-			</div> <!-- End section 5--> 
-		</div> <!-- end fullpage -->
-<?$class = new lib; echo $class->echoFooter()?>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<h2> Software Engineer Summer Associate </h2>
+				<h5> at </h5>
+				<h4> HealthVerity </h4>
+				<h5> May 2016 to August 2016 </h5>
+				<p class="align-center">
+				This is some text that when we use it I hope there is a line break in here somewhere lolol.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<h2> IT Capture and Development Intern </h2>
+				<h5> at </h5>
+				<h4> EDM Americas </h4>
+				<h5> May 2014 - May 2016 </h5>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<h2> Information Technology Technician </h2>
+				<h5> at </h5>
+				<h4> CIAS at RIT </h4>
+				<h5> August 2015 - Present </h5>
+			</div>
+		</div>
+		<!-- Another background -->
+		<div class="cd-fixed-bg cd-bg-3 col-xs-12 text-center vertical-center">
+			<div class="cd-container">
+				<!-- words and things -->
+			</div>
+		</div>
+		<footer class="footer-distributed" id="footer">
+			<div class="footer-left">
+				<img class="img-responsive" id="footer-image" src="">
+				<p class="footer-links">
+					<a href="#home">Home</a>
+					|
+					<a href="#about">About</a>
+					|
+					<a href="#photos">Photos</a>
+					|
+					<a href="#footer">Contact</a>	
+				</p>
+				<p class="footer-company-name">Reed Concepts &copy; 2016</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/rjkphotographs/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.flickr.com/photos/121111447@N08/" target="_blank"><i class="fa fa-flickr"></i></a>
+					<a href="https://www.instagram.com/rjkphotographs/" target="_blank"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p>Contact Me:</p>
+				<form method="post" action="sent_email.php">
+					<input type="text" name="email" id="email" placeholder="Your Email" required/>
+					<div id="email_Error"></div>
+					<textarea name="message" id="message" placeholder="Your Message" required></textarea>
+					<div id="message_Error"></div>
+					<button>Send</button>
+				</form>
+			</div>
+		</footer>
+	</body>
