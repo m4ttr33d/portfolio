@@ -1,4 +1,3 @@
-/* Need to do media queries to fit divs correctly */
 /* Global Stuff */
 body, html, main {
   /* important */
@@ -32,13 +31,11 @@ body, html, main {
 }
 
 .navbar-nav li a {
- line-height: 50px;
- font-size:18px;
+ line-height: 80px;
 }
 
-.navbar-brand{
-  line-height:50px;
-  font-size:20px;
+.active{
+  
 }
 
 /* Home Section*/
@@ -76,63 +73,29 @@ body, html, main {
 
 /* Skills */
 #skills{
-  min-height:65%;
-  /*color:#00B9FF;*/
-}
-
-.skillsDesc{
-  color:black;
-  padding:0;
-  margin:0;
-  display:none;
-}
-
-.skillIcon{
-  color:#00b9FF;
-}
-
-.skillIcon:hover{
-  color:#008BBF;
-}
-
-a{
-  text-decoration: none;
-  color:black;
-}
-a:hover{
-  text-decoration: none;
-  color:black;
+height:70%;
 }
 
 /* Experience */
 #experience{
-min-height:60%;
-}
-
-skill{
-  color:#ff7490; /* Change this to red */
-}
-
-#projects{
-  min-height:55%;
+height:70%;
 }
 
 /* Second Background */
 .cd-fixed-bg.cd-bg-2 {
-  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/OqtafYT5kTw/1600x900");
-  min-height: 63%;
+  background-image: url("");
+  min-height: 80%;
 }
 
 /* Third Background */
 .cd-fixed-bg.cd-bg-3 {
-  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/Bb_X4JgSqIM/1600x900");
+  background-image: url("");
   min-height: 65%;
 }
 
 /* Fourth Background*/
 .cd-fixed-bg.cd-bg-4 {
-  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/y0_vFxOHayg/1600x900");
-  min-height: 65%;
+  background-image: url("");
 }
 
 .cd-scrolling-bg{
@@ -142,8 +105,4 @@ skill{
 
 .vertical-center{
   vertical-align:center;
-}
-
-navbar>li{
-  font: 16px;
 }
