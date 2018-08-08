@@ -1,3 +1,4 @@
+/* Need to do media queries to fit divs correctly */
 /* Global Stuff */
 body, html, main {
   /* important */
@@ -31,11 +32,13 @@ body, html, main {
 }
 
 .navbar-nav li a {
- line-height: 80px;
+ line-height: 50px;
+ font-size:18px;
 }
 
-.active{
-  
+.navbar-brand{
+  line-height:50px;
+  font-size:20px;
 }
 
 /* Home Section*/
@@ -66,36 +69,70 @@ body, html, main {
 }
 
 .cd-fixed-bg.cd-bg-1 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('https://source.unsplash.com/wkO0q0UTqc8/1600x900');
+  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/p-xSl33Wxyc/1600x900");
   min-height: 90%;
   color:white;
 }
 
 /* Skills */
 #skills{
-height:70%;
+  min-height:65%;
+  /*color:#00B9FF;*/
+}
+
+.skillsDesc{
+  color:black;
+  padding:0;
+  margin:0;
+  display:none;
+}
+
+.skillIcon{
+  color:#00b9FF;
+}
+
+.skillIcon:hover{
+  color:#008BBF;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  text-decoration: none;
+  color:black;
 }
 
 /* Experience */
 #experience{
-height:70%;
+min-height:60%;
+}
+
+skill{
+  color:#ff7490; /* Change this to red */
+}
+
+#projects{
+  min-height:55%;
 }
 
 /* Second Background */
 .cd-fixed-bg.cd-bg-2 {
-  background-image: url("");
-  min-height: 80%;
+  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/Bb_X4JgSqIM/1600x900");
+  min-height: 63%;
 }
 
 /* Third Background */
 .cd-fixed-bg.cd-bg-3 {
-  background-image: url("");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('https://source.unsplash.com/2mc2B5iX6as/1600x900');
   min-height: 65%;
 }
 
 /* Fourth Background*/
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("");
+  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/OqtafYT5kTw/1600x900");
+  min-height: 65%;
 }
 
 .cd-scrolling-bg{
@@ -105,4 +142,8 @@ height:70%;
 
 .vertical-center{
   vertical-align:center;
+}
+
+navbar>li{
+  font: 16px;
 }
