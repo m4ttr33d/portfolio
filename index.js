@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', __dirname + '/public/views');
 
 //Start
-app.listen(port);
+app.listen(process.env.PORT || 5000)
 console.log("Server running at localhost:" + port);
 
 //Homepage
