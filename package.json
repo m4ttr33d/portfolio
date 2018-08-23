@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio main site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4ttr33d/portfolio.git"
+  },
+  "author": "Matthew Reed",
+  "license": "ISC",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "body-parser": "^1.17.2"
+  },
+  "bugs": {
+    "url": "https://github.com/m4ttr33d/portfolio/issues"
+  },
+  "homepage": "https://github.com/m4ttr33d/portfolio#readme"
+}
