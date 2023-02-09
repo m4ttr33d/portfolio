@@ -1,0 +1,149 @@
+/* Need to do media queries to fit divs correctly */
+/* Global Stuff */
+body, html, main {
+  /* important */
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  position:relative;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+.cd-fixed-bg {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color:white;
+}
+
+/* NavBar */
+.navbar{
+  height:75px;
+  min-height:75px;
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+.navbar-nav li a {
+ line-height: 50px;
+ font-size:18px;
+}
+
+.navbar-brand{
+  line-height:50px;
+  font-size:20px;
+}
+
+/* Home Section*/
+.typed{
+  display:inline;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/Im7lZjxeLhg/1600x900");
+  min-height: 90%;
+  color:white;
+}
+
+/* Skills */
+#skills{
+  min-height:65%;
+  /*color:#00B9FF;*/
+}
+
+.skillsDesc{
+  color:black;
+  padding:0;
+  margin:0;
+  display:none;
+}
+
+.skillIcon{
+  color:#00b9FF;
+}
+
+.skillIcon:hover{
+  color:#008BBF;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+/* Experience */
+#experience{
+min-height:60%;
+}
+
+skill{
+  color:#ff7490; /* Change this to red */
+}
+
+#projects{
+  min-height:55%;
+}
+
+/* Second Background */
+.cd-fixed-bg.cd-bg-2 {
+  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/oZPwn40zCK4/1600x900");
+  min-height: 63%;
+}
+
+/* Third Background */
+.cd-fixed-bg.cd-bg-3 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url('https://source.unsplash.com/Ar-iTL4QKl4/1600x900');
+  min-height: 65%;
+}
+
+/* Fourth Background*/
+.cd-fixed-bg.cd-bg-4 {
+  background-image:linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) ), url("https://source.unsplash.com/hGV2TfOh0ns/1600x900");
+  min-height: 65%;
+}
+
+.cd-scrolling-bg{
+	min-height:50%;
+	background-color:whitesmoke;
+}
+
+.vertical-center{
+  vertical-align:center;
+}
+
+navbar>li{
+  font: 16px;
+}
